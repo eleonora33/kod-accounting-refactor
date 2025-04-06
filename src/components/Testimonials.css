@@ -1,0 +1,113 @@
+/* ===== Testimonials Carousel Styling ===== */
+.client_section_2 {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #fff8e8;
+}
+
+.client_section_2 h1.what_taital {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #1f1f1f;
+}
+
+.client_section_2 ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.client_section_2 .round_1,
+.client_section_2 .round_2 {
+  width: 50px;
+  height: 50px;
+}
+
+.client_section_2 .image_11 {
+  width: 110px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #ff5a58;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.client_section_2 .dummy_text {
+  font-style: italic;
+  font-size: 20px;
+  line-height: 1.8;
+  max-width: 850px;
+  margin: 30px auto 0 auto;
+  color: #333;
+  padding: 0 20px;
+}
+
+/* ===== Carousel Arrows (optional, can hide if needed) ===== */
+.carousel .control-arrow {
+  background: rgba(255, 90, 88, 0.9);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  transition: background 0.3s ease;
+}
+
+.carousel .control-arrow:hover {
+  background: rgba(224, 75, 72, 0.9);
+}
+
+.carousel .control-arrow:before {
+  font-size: 20px;
+  color: #fff;
+}
+
+.carousel .control-prev.control-arrow {
+  left: 15px;
+}
+
+.carousel .control-next.control-arrow {
+  right: 15px;
+}
+
+/* ===== Stylized Dots ===== */
+.carousel .control-dots {
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  z-index: 5;
+}
+
+.carousel .control-dots .dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ff5a58;
+  opacity: 0.3;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: none;
+}
+
+.carousel .control-dots .dot:hover {
+  opacity: 0.8;
+  transform: scale(1.1);
+}
+
+.carousel .control-dots .dot.selected {
+  opacity: 1;
+  transform: scale(1.4);
+  background-color: #e04b48;
+  box-shadow: 0 0 0 4px rgba(255, 90, 88, 0.1);
+}

@@ -1,0 +1,28 @@
+.moremore_bt {
+    width: 170px;
+    float: left;
+    margin-top: 30px;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .moremore_bt a {
+    width: 100%;
+    float: left;
+    font-size: 16px;
+    color: #181818;
+    border: 2px solid #181818;
+    text-align: center;
+    padding: 10px 0px;
+    border-radius: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+  }
+  
+  .moremore_bt a:hover {
+    color: #181818;
+    border: 2px solid #ff5a58;
+  }
+  

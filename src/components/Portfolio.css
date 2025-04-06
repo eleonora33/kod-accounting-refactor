@@ -1,0 +1,186 @@
+/* ✅ Основна секција */
+.portfolio_section {
+  background: linear-gradient(to right, #f9c862, #fbbd3f); /* топол жолт градиент */
+  padding: 60px 0;
+}
+
+/* Заглавие и текст */
+.services_taital {
+  font-size: 36px;
+  font-weight: bold;
+  color: #1a1a1a;
+  margin-bottom: 20px;
+}
+
+.services_text {
+  color: #2f2f2f;
+  margin-bottom: 30px;
+}
+
+/* Копче */
+.moremore_bt a {
+  display: inline-block;
+  padding: 12px 30px;
+  border: 2px solid #000;
+  border-radius: 30px;
+  text-decoration: none;
+  color: #000;
+  transition: all 0.3s ease;
+}
+
+.moremore_bt a:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Слики во грид */
+.image_grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.image_card {
+  position: relative;
+  width: calc(50% - 10px);
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.grid_image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 15px;
+}
+
+/* Hover overlay */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 82, 82, 0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.image_card:hover .overlay {
+  opacity: 1;
+}
+
+.search_icon {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+.fact_text {
+  color: #fff;
+  font-weight: bold;
+}
+
+/* === Статистики (икони, бројки, опис) === */
+.stats_row {
+  margin-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  text-align: center;
+  padding: 40px 20px;
+  background: linear-gradient(to right, #f9c862, #fbbd3f);
+}
+
+.stat_block {
+  flex: 1;
+  min-width: 220px;
+  padding: 30px 20px;
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.stat_block:hover {
+  transform: translateY(-5px);
+}
+
+.stat_block img {
+  height: 60px;
+  margin-bottom: 15px;
+  filter: brightness(0) saturate(100%);
+}
+
+.stat_block h3 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.stat_block p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #444;
+}
+/* ✅ Модал */
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7); /* полупрозорна позадина */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+/* ✅ Модал */
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 800px; /* Намалена ширина */
+  width: 90%;
+  text-align: center;
+  position: relative;
+  max-height: 600px; /* Намалена висина */
+  overflow-y: auto; /* Додај ако сакаш да има скрол */
+}
+
+.modal-image {
+  width: 100%;
+  max-height: 250px; /* Ограничена висина на сликата */
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+.modal-btn {
+  background-color: #ff5a58;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: transparent;
+  border: none;
+  font-size: 22px;
+  color: #333;
+  cursor: pointer;
+}

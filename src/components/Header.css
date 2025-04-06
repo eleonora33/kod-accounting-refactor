@@ -1,0 +1,80 @@
+.header_section {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  background: linear-gradient(135deg, #f4c95d 0%, #ffffff 100%);
+  padding: 80px 20px;
+  align-items: center;
+}
+
+.header_left {
+  flex: 1 1 60%;
+  padding-right: 40px;
+}
+
+.header_right {
+  flex: 1 1 40%;
+  text-align: center;
+}
+
+.banner_main {
+  max-width: 700px;
+}
+
+.banner_taital {
+  font-size: 40px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.banner_text {
+  font-size: 18px;
+  color: #2f2f2f;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+/* ✅ Toggle текст дел */
+.more_info_text {
+  font-size: 17px;
+  color: #444;
+  line-height: 1.6;
+  margin-top: 10px;
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 16px 20px;
+  border-left: 4px solid #ff5a58;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+.banner_img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+}
+
+.btn_main {
+  margin-top: 20px;
+}
+
+.more_bt button {
+  width: 170px;
+  font-size: 16px;
+  color: #000;
+  border: 2px solid #ff5a58;
+  text-align: center;
+  padding: 10px 0;
+  border-radius: 40px;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.more_bt button:hover {
+  background-color: #ff5a58;
+  color: #fff;
+}
