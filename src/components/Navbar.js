@@ -27,12 +27,20 @@ const Navbar = () => {
 
         <button
           type="button"
-          className="absolute right-5 top-4 inline-flex h-11 w-11 items-center justify-center rounded-full border border-brandNavy/15 bg-white text-brandNavy lg:hidden"
+          className="inline-flex h-11 w-11 shrink-0 flex-col items-center justify-center gap-1.5 rounded-full border border-brandNavy/15 bg-white text-brandNavy lg:hidden"
           aria-expanded={isNavOpen}
           aria-label="Отвори мени"
           onClick={() => setNavOpen((open) => !open)}
         >
-          <span className="text-2xl leading-none">{isNavOpen ? '×' : '≡'}</span>
+          {isNavOpen ? (
+            <span className="text-2xl leading-none">×</span>
+          ) : (
+            <>
+              <span className="h-0.5 w-4 rounded-full bg-current" />
+              <span className="h-0.5 w-4 rounded-full bg-current" />
+              <span className="h-0.5 w-4 rounded-full bg-current" />
+            </>
+          )}
         </button>
 
         <div className="hidden items-center gap-6 lg:flex">
