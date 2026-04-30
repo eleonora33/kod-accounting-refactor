@@ -1,6 +1,4 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import "./App.css";
 import RootLayout from './components/RootLayout';
 import Home from './components/Home';
 import HeaderMoreForUs from './components/HeaderMoreForUs';

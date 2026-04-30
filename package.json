@@ -26,6 +26,9 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "build:css": "tailwindcss -i ./src/index.css -o ./src/tailwind.generated.css",
+    "prestart": "npm run build:css",
+    "prebuild": "npm run build:css",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -50,6 +53,9 @@
     ]
   },
   "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "autoprefixer": "^10.4.17",
+    "postcss": "^8.4.35",
+    "tailwindcss": "^3.4.1"
   }
 }

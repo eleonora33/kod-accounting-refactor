@@ -42,6 +42,16 @@ build/Release
 node_modules/
 jspm_packages/
 
+# Local build and verification artifacts
+build/
+/*.png
+/*.pdf
+/bundle-dev*.js
+.chrome-cdp-footer/
+src/assets/images/kod-consulting-*.png
+!src/assets/images/kod-consulting-footer-horizontal-cropped.png
+!src/assets/images/kod-consulting-navbar-composite.png
+
 # Snowpack dependency directory (https://snowpack.dev/)
 web_modules/
 
